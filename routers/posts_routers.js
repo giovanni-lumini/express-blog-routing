@@ -13,7 +13,7 @@ const posts_router = require("../controllers/posts_controllers.js")
 router.get("/", posts_router.posts)
 
 //seconda rotta
-router.get("/slug", posts_router.show_slug)
+router.get("/:slug", posts_router.show_slug)
 
 //esporto la rotta
 module.exports = router
