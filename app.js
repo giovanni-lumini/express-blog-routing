@@ -17,5 +17,7 @@ app.get('/', (req, res) => {
 
 //importiamo quanto esportato da "posts_routers.js" (la rotta)
 const posts_router = require("./routers/posts_routers.js")
+
 //2-creo la seconda rotta
 app.use("/posts", posts_router)
+
