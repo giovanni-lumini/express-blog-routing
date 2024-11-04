@@ -13,7 +13,7 @@ res.status(200).json(response_data)
 //seconda logica della futura rotta
 const show_slug = (req, res) => {
     //usiamo il ciclo find per ciclare e cercare lo slug corrispondente al post
-    const post = posts.find(post => post.slug === (req.params.slug))
+    const post = post_controllers.find(post => post_controllers.slug === (req.params.slug))
     console.log(post);
     if(!post){
         return res.status(404).json({
